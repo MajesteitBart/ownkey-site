@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ownkey — a keyboard you actually own</title>
+<meta name="description" content="Voice typing and AI input for Android and Windows. Private by default, open source, bring your own API key. Your words stay yours.">
+<link rel="canonical" href="https://ownkey.bvdm.ai/">
+<link rel="icon" type="image/png" href="assets/icon-512.png">
+<link rel="apple-touch-icon" href="assets/icon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ownkey.bvdm.ai/">
+<meta property="og:title" content="ownkey — a keyboard you actually own">
+<meta property="og:description" content="Voice typing and AI input for Android and Windows. Private by default, open source, bring your own API key.">
+<meta property="og:image" content="https://ownkey.bvdm.ai/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Canonical Ownkey mark, reused via <use>. Eyes use currentColor so they
+     blend with the local background. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="monkey">
+      <g fill="#F3F1EC">
+        <path d="M60 98C25 111 0 151 0 193c0 55 39 97 90 102v-37c-31-6-51-31-51-64 0-24 8-43 21-55V98Z"/>
+        <path d="M592 98c35 13 60 53 60 95 0 55-39 97-90 102v-37c31-6 51-31 51-64 0-24-8-43-21-55V98Z"/>
+        <path d="M326 42C294 12 258-3 216 1 146 8 94 80 94 166c0 45 24 78 52 98 9 6 18 11 28 15-9 39-10 86 0 126 13 51 52 81 111 81h82c59 0 98-30 111-81 10-40 9-87 0-126 10-4 19-9 28-15 28-20 52-53 52-98C558 80 506 8 436 1c-42-4-78 11-110 41Z"/>
+      </g>
+      <g fill="currentColor">
+        <circle cx="221.5" cy="154.5" r="38"/>
+        <circle cx="431" cy="154.5" r="38.25"/>
+      </g>
+      <g fill="#DE5F14">
+        <rect x="216" y="323" width="27" height="70" rx="13"/>
+        <rect x="265" y="287" width="27" height="139" rx="13"/>
+        <rect x="312" y="248" width="28" height="212" rx="13"/>
+        <rect x="360" y="288" width="27" height="136" rx="13"/>
+        <rect x="409" y="323" width="28" height="70" rx="13"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="navlogo" href="#top">
+      <svg viewBox="0 -81 652 652" aria-hidden="true"><use href="#monkey"/></svg> ownkey
+    </a>
+    <div class="navlinks">
+      <a href="#android">Android</a>
+      <a href="#windows">Windows</a>
+      <a href="#how">How it works</a>
+      <a class="navgh" href="https://github.com/MajesteitBart/ownkey-keyboard" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag">ownkey · private AI input</span>
+      <h1 class="hero-word">A keyboard you actually <b>own</b>.</h1>
+      <p class="hero-sub">Voice typing and AI input on Android and Windows — without sending your words to someone else's servers. Bring your own API key. Your words stay yours.</p>
+      <p class="hero-meta">Your keys. Your voice. <b>Your space.</b></p>
+      <div class="cta-row">
+        <a class="btn solid" href="#android">Get it for Android</a>
+        <a class="btn ghost" href="#windows">Get it for Windows</a>
+      </div>
+      <p class="cta-note">open source · no account · pay your provider, not us</p>
+    </div>
+    <div class="hero-visual">
+      <div class="keycap"><svg viewBox="0 -81 652 652" aria-hidden="true"><use href="#monkey"/></svg></div>
+      <div class="wave" aria-hidden="true">
+        <span class="bar" style="--h:30%;--d:0s"></span>
+        <span class="bar" style="--h:62%;--d:.1s"></span>
+        <span class="bar" style="--h:88%;--d:.2s"></span>
+        <span class="bar" style="--h:52%;--d:.3s"></span>
+        <span class="bar" style="--h:72%;--d:.15s"></span>
+        <span class="bar" style="--h:40%;--d:.25s"></span>
+        <span class="bar" style="--h:92%;--d:.05s"></span>
+        <span class="bar" style="--h:56%;--d:.35s"></span>
+        <span class="bar" style="--h:34%;--d:.2s"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PROMISE -->
+<section id="promise">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">01</span><span class="tag tick">The promise</span></div>
+    <h2 class="stitle rv">Private by default. Not by settings.</h2>
+    <p class="lead rv">Useful AI usually means giving up your data. Ownkey refuses the trade-off: full-featured input, zero data harvesting.</p>
+    <div class="principles">
+      <div class="principle rv">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#DE5F14" stroke-width="3" aria-hidden="true"><path d="M4 24s7-13 20-13 20 13 20 13-7 13-20 13S4 24 4 24Z"/><circle cx="24" cy="24" r="6"/></svg>
+        <h3>Private by default</h3><p>Privacy isn't a setting to find. It's the state you start in.</p>
+      </div>
+      <div class="principle rv">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#DE5F14" stroke-width="3" aria-hidden="true"><rect x="9" y="21" width="30" height="20" rx="3"/><path d="M16 21v-6a8 8 0 0 1 16 0v6"/></svg>
+        <h3>No data collection</h3><p>We don't harvest, sell, or phone home. There's nothing to leak.</p>
+      </div>
+      <div class="principle rv">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#9DCB3B" stroke-width="3" aria-hidden="true"><circle cx="18" cy="18" r="6"/><path d="M22 22 41 41M34 34l5-5M30 30l5-5"/></svg>
+        <h3>Bring your own key</h3><p>Your AI provider, your account, your control. We're just the keyboard.</p>
+      </div>
+      <div class="principle rv">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#9DCB3B" stroke-width="3" aria-hidden="true"><path d="M24 6 40 13v11c0 10-7 15-16 18-9-3-16-8-16-18V13Z"/><path d="M17 24l5 6 10-13"/></svg>
+        <h3>Open by design</h3><p>Built in the open, on every platform. The code is the proof.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANDROID -->
+<section id="android">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">02</span><span class="tag tick green">Platform · Android</span></div>
+    <h2 class="stitle rv">Ownkey Keyboard</h2>
+    <p class="lead rv">A full Android keyboard with dictation and AI rewrite built in — and your own provider behind it.</p>
+    <div class="split">
+      <div class="features">
+        <div class="feature rv">
+          <span class="n">01</span>
+          <div><h3>Speak when it's faster</h3><p>Tap the mic. Speak freely. Stop when done. Your speech becomes text through your own provider.</p></div>
+        </div>
+        <div class="feature rv">
+          <span class="n">02</span>
+          <div><h3>Rewrite when it's messy</h3><p>Fix grammar. Make it shorter. Change the tone. Select text and let your model clean it up.</p></div>
+        </div>
+        <div class="feature rv">
+          <span class="n">03</span>
+          <div><h3>Choose your own AI</h3><p>OpenAI, Anthropic, Mistral, OpenRouter, or a custom endpoint. Your key stays encrypted on-device.</p></div>
+        </div>
+        <div class="feature rv">
+          <span class="n">04</span>
+          <div><h3>No keyboard-content monitoring</h3><p>No added monitoring of what you type or say. Open source — read every line.</p></div>
+        </div>
+        <div class="cta-row rv">
+          <span class="btn soon" aria-disabled="true">Google Play — coming soon</span>
+          <a class="btn ghost" href="https://github.com/MajesteitBart/ownkey-keyboard" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+      <div class="shots rv" role="group" aria-label="Ownkey Keyboard screenshots">
+        <img src="assets/shot-speak.png" alt="Ownkey Keyboard recording voice input: Speak when it's faster" width="942" height="1672" loading="lazy">
+        <img src="assets/shot-providers.png" alt="Provider picker: OpenAI, Anthropic, Mistral, OpenRouter, or a custom endpoint" width="942" height="1672" loading="lazy">
+        <img src="assets/shot-yours.png" alt="Ownkey Keyboard dark theme: Your keyboard should be yours" width="942" height="1672" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WINDOWS -->
+<section id="windows">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">03</span><span class="tag tick">Platform · Windows</span></div>
+    <h2 class="stitle rv">Ownkey for Windows</h2>
+    <p class="lead rv">Push-to-talk dictation for the desktop. Hold a hotkey, speak, release — your words are typed into whichever app has focus.</p>
+    <div class="split reverse">
+      <div class="desktop rv" aria-hidden="true">
+        <div class="fakewin">
+          <div class="winbar"><span></span><span></span><span></span></div>
+          <p class="docline">Could you send me the report when you have a moment? Thank you.<span class="caret"></span></p>
+        </div>
+        <div class="overlaypill">
+          <div class="wave small">
+            <span class="bar" style="--h:40%;--d:.05s"></span>
+            <span class="bar" style="--h:75%;--d:.2s"></span>
+            <span class="bar" style="--h:100%;--d:0s"></span>
+            <span class="bar" style="--h:65%;--d:.3s"></span>
+            <span class="bar" style="--h:45%;--d:.12s"></span>
+          </div>
+          <span class="pill-label">listening</span>
+          <kbd>Right Alt</kbd>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature rv">
+          <span class="n">01</span>
+          <div><h3>Hold to talk</h3><p>Hold <kbd>Right Alt</kbd>, speak, release. A short ping tells you the mic is armed.</p></div>
+        </div>
+        <div class="feature rv">
+          <span class="n">02</span>
+          <div><h3>Types anywhere</h3><p>Browser, editor, chat, terminal — if it takes text, Ownkey types into it.</p></div>
+        </div>
+        <div class="feature rv">
+          <span class="n">03</span>
+          <div><h3>Rewrite on the fly</h3><p>Auto-clean your dictation, or select text, hold <kbd>Right Ctrl</kbd>, and say what should change.</p></div>
+        </div>
+        <div class="feature rv">
+          <span class="n">04</span>
+          <div><h3>Voxtral, your key</h3><p>Transcription runs through your own Mistral account. Runs quietly from the system tray.</p></div>
+        </div>
+        <div class="cta-row rv">
+          <a class="btn solid" href="https://github.com/MajesteitBart/ownkey-windows" rel="noopener">Get it on GitHub</a>
+        </div>
+        <p class="cta-note rv">windows 10/11 · MIT license</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">04</span><span class="tag tick">Bring your own key</span></div>
+    <h2 class="stitle rv">Your key. Your provider. Your bill.</h2>
+    <p class="lead rv">Ownkey doesn't run servers between you and your AI. There's no middleman to trust, because there's no middleman.</p>
+    <div class="steps">
+      <div class="step rv">
+        <span class="n">step 01</span>
+        <h3>Get a key</h3>
+        <p>From OpenAI, Anthropic, Mistral, OpenRouter — or point at your own endpoint.</p>
+      </div>
+      <div class="step rv">
+        <span class="n">step 02</span>
+        <h3>Paste it once</h3>
+        <p>It's stored on your device and nowhere else. Swap providers whenever you like.</p>
+      </div>
+      <div class="step rv">
+        <span class="n">step 03</span>
+        <h3>Speak</h3>
+        <p>Audio goes from your device to your provider, and text comes back. That's the whole route.</p>
+      </div>
+    </div>
+    <p class="strip rv">No account. No subscription. No telemetry. <b>Pay your provider, not us.</b></p>
+  </div>
+</section>
+
+<!-- OPEN SOURCE -->
+<section id="source">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">05</span><span class="tag tick">Open source</span></div>
+    <h2 class="stitle rv">Read every line.</h2>
+    <p class="lead rv">Both apps are MIT-licensed and developed in the open. Inspect them, fork them, build them yourself.</p>
+    <div class="repos">
+      <a class="repo rv" href="https://github.com/MajesteitBart/ownkey-keyboard" rel="noopener">
+        <span class="reponame">MajesteitBart/<b>ownkey-keyboard</b></span>
+        <p>Ownkey Keyboard for Android — privacy-first, BYOK, open-source.</p>
+        <span class="repometa">Android · Kotlin · MIT <span class="arrow">→</span></span>
+      </a>
+      <a class="repo rv" href="https://github.com/MajesteitBart/ownkey-windows" rel="noopener">
+        <span class="reponame">MajesteitBart/<b>ownkey-windows</b></span>
+        <p>Ownkey for Windows — push-to-talk voice typing powered by Voxtral.</p>
+        <span class="repometa">Windows · Python + Tauri · MIT <span class="arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<div class="closing">
+  <div class="wrap">
+    <p class="bigtag rv">Your keys.<br>Your voice.<br><span class="o">Your space.</span></p>
+    <div class="cta-row center rv">
+      <a class="btn solid" href="#android">Get it for Android</a>
+      <a class="btn ghost" href="#windows">Get it for Windows</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>ownkey © 2026 · MIT license</span>
+    <span>privacy-first · open-source · android + windows</span>
+    <span class="o">own + monkey = ownkey</span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
