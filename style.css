@@ -135,6 +135,7 @@ section{padding:100px 0;border-top:1px solid var(--line);position:relative;scrol
 /* ---- platform sections ---- */
 .split{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;margin-top:48px;align-items:center}
 .split.reverse{grid-template-columns:1.05fr 1fr}
+.split>*{min-width:0}
 @media(max-width:880px){
   .split,.split.reverse{grid-template-columns:1fr;gap:48px}
   .split.reverse .desktop{order:2}
@@ -153,18 +154,44 @@ kbd{
   border-radius:6px;padding:2px 8px;white-space:nowrap;
 }
 
-/* ---- android screenshots ---- */
-.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
-.shots img{
-  width:100%;height:auto;border-radius:18px;border:1px solid var(--line);
-  background:var(--graphite);display:block;
+/* ---- android keyboard mockup ---- */
+.droid{position:relative;display:flex;justify-content:center}
+.droid::before{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:108%;height:120%;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(222,95,20,.5),rgba(222,95,20,.18) 55%,transparent);
+  filter:blur(26px)}
+.akbd{
+  position:relative;width:100%;max-width:520px;container-type:inline-size;
+  background:#1A1713;border:1px solid rgba(255,255,255,.06);border-radius:26px;
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.85);
 }
-.shots img:nth-child(2){transform:translateY(26px)}
-@media(max-width:880px){
-  .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin:0 -28px;padding-left:28px;padding-right:28px}
-  .shots img{flex:0 0 62%;max-width:290px;scroll-snap-align:center}
-  .shots img:nth-child(2){transform:none}
-}
+.akin{padding:3.2cqw;display:flex;flex-direction:column;gap:1.7cqw}
+.voicebar{display:flex;align-items:center;gap:2.6cqw;height:10cqw;margin-bottom:1cqw}
+.vbtn{flex:0 0 9.4cqw;height:9.4cqw;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.vbtn.dim{background:#282320}
+.vbtn.stop{background:var(--orange)}
+.vbtn.stop span{width:32%;height:32%;background:#fff;border-radius:24%}
+.vbtn svg{width:4.4cqw;height:4.4cqw;color:var(--bone)}
+.rec{display:flex;align-items:center;gap:1.4cqw;font-family:"JetBrains Mono",monospace;
+  font-size:2.9cqw;color:var(--bone)}
+.rec::before{content:"";width:1.7cqw;height:1.7cqw;border-radius:50%;background:var(--orange)}
+.vwave{flex:1;display:flex;align-items:center;justify-content:center;gap:1cqw;height:5.4cqw}
+.vwave .bar{width:1cqw;height:var(--h,50%);border-radius:1cqw;background:var(--orange);
+  animation:bounce 1.1s ease-in-out infinite;animation-delay:var(--d,0s)}
+.vico{display:flex;color:var(--bone)}
+.vico svg{width:4.8cqw;height:4.8cqw}
+.akrow{display:flex;gap:1.7cqw;height:11.6cqw}
+.akrow.inset{padding:0 4.8cqw}
+.k{flex:1 1 0;display:flex;align-items:center;justify-content:center;position:relative;
+  background:#272220;border-radius:1.8cqw;color:var(--bone);font-size:4.2cqw;
+  font-weight:500;line-height:1}
+.k i{font-style:normal;position:absolute;top:1cqw;right:1.5cqw;font-size:2cqw;color:var(--ash)}
+.k svg{width:4.8cqw;height:4.8cqw}
+.k.wide{flex:0 0 12.4cqw}
+.k.sym{font-size:2.9cqw;font-weight:600}
+.k.space{flex:4.7 1 0;font-size:2.9cqw}
+.k.enter{background:var(--orange)}
+.k.enter svg{color:#fff}
 
 /* ---- windows mockup ---- */
 .desktop{position:relative;padding-bottom:44px}
@@ -239,7 +266,7 @@ footer .o{color:var(--orange)}
 /* ---- reduced motion ---- */
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .wave .bar,.caret{animation:none}
+  .wave .bar,.vwave .bar,.caret{animation:none}
   .rv{opacity:1;transform:none;transition:none}
   .btn,.repo{transition:none}
 }
