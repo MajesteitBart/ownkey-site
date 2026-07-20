@@ -261,7 +261,6 @@ kbd{
 footer{padding:40px 0;border-top:1px solid var(--line);color:var(--ash);
   font-family:"JetBrains Mono",monospace;font-size:.76rem}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
-footer .o{color:var(--orange)}
 
 /* ---- reduced motion ---- */
 @media(prefers-reduced-motion:reduce){
