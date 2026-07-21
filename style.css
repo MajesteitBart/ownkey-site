@@ -162,13 +162,13 @@ kbd{
   filter:blur(26px)}
 .akbd{
   position:relative;width:100%;max-width:520px;container-type:inline-size;
-  background:#1A1713;border:1px solid rgba(255,255,255,.06);border-radius:26px;
+  background:#0D0D0C;border:1px solid rgba(255,255,255,.06);border-radius:26px;
   box-shadow:0 40px 80px -30px rgba(0,0,0,.85);
 }
 .akin{padding:3.2cqw;display:flex;flex-direction:column;gap:1.7cqw}
 .voicebar{display:flex;align-items:center;gap:2.6cqw;height:10cqw;margin-bottom:1cqw}
 .vbtn{flex:0 0 9.4cqw;height:9.4cqw;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.vbtn.dim{background:#282320}
+.vbtn.dim{background:#131515}
 .vbtn.stop{background:var(--orange)}
 .vbtn.stop span{width:32%;height:32%;background:#fff;border-radius:24%}
 .vbtn svg{width:4.4cqw;height:4.4cqw;color:var(--bone)}
@@ -183,14 +183,14 @@ kbd{
 .akrow{display:flex;gap:1.7cqw;height:11.6cqw}
 .akrow.inset{padding:0 4.8cqw}
 .k{flex:1 1 0;display:flex;align-items:center;justify-content:center;position:relative;
-  background:#272220;border-radius:1.8cqw;color:var(--bone);font-size:4.2cqw;
+  background:#151516;border-radius:1.8cqw;color:var(--bone);font-size:4.2cqw;
   font-weight:500;line-height:1}
 .k i{font-style:normal;position:absolute;top:1cqw;right:1.5cqw;font-size:2cqw;color:var(--ash)}
 .k svg{width:4.8cqw;height:4.8cqw}
 .k.wide{flex:0 0 12.4cqw}
 .k.sym{font-size:2.9cqw;font-weight:600}
 .k.space{flex:4.7 1 0;font-size:2.9cqw}
-.k.enter{background:var(--orange)}
+.k.enter{background:var(--orange);flex:0 0 16.4cqw}
 .k.enter svg{color:#fff}
 
 /* ---- windows mockup ---- */
