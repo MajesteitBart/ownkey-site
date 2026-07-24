@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ownkey — a keyboard you actually own</title>
+<title>ownkey · a keyboard you actually own</title>
 <meta name="description" content="Voice typing and AI input for Android and Windows. Private by default, open source, bring your own API key. Your words stay yours.">
 <link rel="canonical" href="https://ownkey.bvdm.ai/">
 <link rel="icon" type="image/png" href="assets/icon-512.png">
 <link rel="apple-touch-icon" href="assets/icon-512.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ownkey.bvdm.ai/">
-<meta property="og:title" content="ownkey — a keyboard you actually own">
+<meta property="og:title" content="ownkey · a keyboard you actually own">
 <meta property="og:description" content="Voice typing and AI input for Android and Windows. Private by default, open source, bring your own API key.">
 <meta property="og:image" content="https://ownkey.bvdm.ai/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -66,7 +66,7 @@
     <div>
       <span class="tag">ownkey · private AI input</span>
       <h1 class="hero-word">A keyboard you actually <b>own</b>.</h1>
-      <p class="hero-sub">Voice typing and AI input on Android and Windows — without sending your words to someone else's servers. Bring your own API key. Your words stay yours.</p>
+      <p class="hero-sub">Voice typing and AI input on Android and Windows, without sending your words to someone else's servers. Bring your own API key. Your words stay yours.</p>
       <p class="hero-meta">Your keys. Your voice. <b>Your space.</b></p>
       <div class="cta-row">
         <a class="btn solid" href="#android">Get it for Android</a>
@@ -75,17 +75,37 @@
       <p class="cta-note">open source · no account · pay your provider, not us</p>
     </div>
     <div class="hero-visual">
-      <div class="keycap"><svg viewBox="0 -81 652 652" aria-hidden="true"><use href="#monkey"/></svg></div>
-      <div class="wave" aria-hidden="true">
-        <span class="bar" style="--h:30%;--d:0s"></span>
-        <span class="bar" style="--h:62%;--d:.1s"></span>
-        <span class="bar" style="--h:88%;--d:.2s"></span>
-        <span class="bar" style="--h:52%;--d:.3s"></span>
-        <span class="bar" style="--h:72%;--d:.15s"></span>
-        <span class="bar" style="--h:40%;--d:.25s"></span>
-        <span class="bar" style="--h:92%;--d:.05s"></span>
-        <span class="bar" style="--h:56%;--d:.35s"></span>
-        <span class="bar" style="--h:34%;--d:.2s"></span>
+      <div class="hero-demo">
+        <div class="player" data-state="idle" data-muted="false">
+          <div class="winbar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <video controls playsinline preload="metadata" poster="assets/demo-poster.jpg" aria-label="Ownkey product demo">
+            <source src="assets/ownkey-product-demo-vo.mp4" type="video/mp4">
+          </video>
+          <div class="pcover" aria-hidden="true">
+            <span class="plabel">watch the demo · <b class="pdur">0:55</b></span>
+          </div>
+          <button class="pbig" aria-label="Play the demo">
+            <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"/></svg>
+            <svg class="i-replay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          </button>
+          <div class="pui">
+            <button class="pbtn ptoggle" aria-label="Play">
+              <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"/></svg>
+              <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7Zm6 0h4v14h-4Z"/></svg>
+            </button>
+            <span class="ptime pcur">0:00</span>
+            <div class="ptrack" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0"><span class="pfill"></span></div>
+            <span class="ptime plen">0:55</span>
+            <button class="pbtn pmute" aria-label="Mute">
+              <svg class="i-von" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              <svg class="i-voff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6m0-6 6 6"/></svg>
+            </button>
+            <button class="pbtn pfs" aria-label="Fullscreen">
+              <svg class="i-max" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+              <svg class="i-min" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/></svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -123,7 +143,7 @@
   <div class="wrap">
     <div class="shead rv"><span class="snum">02</span><span class="tag tick green">Platform · Android</span></div>
     <h2 class="stitle rv">Ownkey Keyboard</h2>
-    <p class="lead rv">A full Android keyboard with dictation and AI rewrite built in — and your own provider behind it.</p>
+    <p class="lead rv">A full Android keyboard with dictation and AI rewrite built in, and your own provider behind it.</p>
     <div class="split">
       <div class="features">
         <div class="feature rv">
@@ -140,10 +160,10 @@
         </div>
         <div class="feature rv">
           <span class="n">04</span>
-          <div><h3>No keyboard-content monitoring</h3><p>No added monitoring of what you type or say. Open source — read every line.</p></div>
+          <div><h3>No keyboard-content monitoring</h3><p>No added monitoring of what you type or say. Open source: read every line.</p></div>
         </div>
         <div class="cta-row rv">
-          <span class="btn soon" aria-disabled="true">Google Play — coming soon</span>
+          <span class="btn soon" aria-disabled="true">Google Play · coming soon</span>
           <a class="btn ghost" href="https://github.com/MajesteitBart/ownkey-keyboard" rel="noopener">View on GitHub</a>
         </div>
       </div>
@@ -226,7 +246,7 @@
   <div class="wrap">
     <div class="shead rv"><span class="snum">03</span><span class="tag tick">Platform · Windows</span></div>
     <h2 class="stitle rv">Ownkey for Windows</h2>
-    <p class="lead rv">Push-to-talk dictation for the desktop. Hold a hotkey, speak, release — your words are typed into whichever app has focus.</p>
+    <p class="lead rv">Push-to-talk dictation for the desktop. Hold a hotkey, speak, release. Your words are typed into whichever app has focus.</p>
     <div class="split reverse">
       <div class="desktop rv" aria-hidden="true">
         <div class="fakewin">
@@ -252,7 +272,7 @@
         </div>
         <div class="feature rv">
           <span class="n">02</span>
-          <div><h3>Types anywhere</h3><p>Browser, editor, chat, terminal — if it takes text, Ownkey types into it.</p></div>
+          <div><h3>Types anywhere</h3><p>Browser, editor, chat, terminal: if it takes text, Ownkey types into it.</p></div>
         </div>
         <div class="feature rv">
           <span class="n">03</span>
@@ -281,7 +301,7 @@
       <div class="step rv">
         <span class="n">step 01</span>
         <h3>Get a key</h3>
-        <p>From OpenAI, Anthropic, Mistral, OpenRouter — or point at your own endpoint.</p>
+        <p>From OpenAI, Anthropic, Mistral, OpenRouter, or your own endpoint.</p>
       </div>
       <div class="step rv">
         <span class="n">step 02</span>
@@ -307,12 +327,12 @@
     <div class="repos">
       <a class="repo rv" href="https://github.com/MajesteitBart/ownkey-keyboard" rel="noopener">
         <span class="reponame">MajesteitBart/<b>ownkey-keyboard</b></span>
-        <p>Ownkey Keyboard for Android — privacy-first, BYOK, open-source.</p>
+        <p>Ownkey Keyboard for Android: privacy-first, BYOK, open-source.</p>
         <span class="repometa">Android · Kotlin · MIT <span class="arrow">→</span></span>
       </a>
       <a class="repo rv" href="https://github.com/MajesteitBart/ownkey-windows" rel="noopener">
         <span class="reponame">MajesteitBart/<b>ownkey-windows</b></span>
-        <p>Ownkey for Windows — push-to-talk voice typing powered by Voxtral.</p>
+        <p>Ownkey for Windows: push-to-talk voice typing powered by Voxtral.</p>
         <span class="repometa">Windows · Python + Tauri · MIT <span class="arrow">→</span></span>
       </a>
     </div>

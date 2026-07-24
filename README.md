@@ -1,6 +1,6 @@
 # ownkey site
 
-Marketing site for [Ownkey](https://ownkey.bvdm.ai) — private AI input for Android and Windows.
+Marketing site for [Ownkey](https://ownkey.bvdm.ai): private AI input for Android and Windows.
 
 Static HTML/CSS/JS, no build step.
 
@@ -23,5 +23,5 @@ netlify deploy --prod --dir .
 
 ## Related
 
-- [ownkey-keyboard](https://github.com/MajesteitBart/ownkey-keyboard) — Ownkey Keyboard for Android
-- [ownkey-windows](https://github.com/MajesteitBart/ownkey-windows) — Ownkey for Windows
+- [ownkey-keyboard](https://github.com/MajesteitBart/ownkey-keyboard): Ownkey Keyboard for Android
+- [ownkey-windows](https://github.com/MajesteitBart/ownkey-windows): Ownkey for Windows
